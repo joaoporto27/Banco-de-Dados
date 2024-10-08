@@ -56,5 +56,3 @@ SELECT * FROM atletas WHERE nome LIKE 'P%';
 SELECT * FROM atletas WHERE atuando = 'True'
 SELECT * FROM atletas WHERE altura BETWEEN 1.64 AND 1.74;
 
-
-
