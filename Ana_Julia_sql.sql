@@ -77,3 +77,17 @@ UPDATE atletas SET nacionalidade = 'Argentina' WHERE nome = 'Aleksandr Evgenyevi
 UPDATE atletas SET altura = 1.86 WHERE nome = 'Giorgio Minisini';
 UPDATE atletas SET nacionalidade = 'França' WHERE nome LIKE 'M%';
 UPDATE atletas SET altura = 1.54 WHERE id = 95;
+
+
+DELETE FROM atletas WHERE nacionalidade = 'EUA' AND data_nascimento = '1979-01-17';
+DELETE FROM atletas WHERE data_nascimento < 1974-01-01;
+DELETE FROM atletas WHERE id = 41;
+DELETE FROM atletas WHERE genero = 'Masculino' AND nome = 'Scott Brash';
+DELETE FROM atletas WHERE modalidade = 'Nado artístico' AND altura = 1.76;
+DELETE FROM atletas WHERE modalidade = 'Basquete' AND nacionalidade = 'Grécia';
+DELETE FROM atletas WHERE nacionalidade = 'Argentina';
+DELETE FROM atletas WHERE genero = 'Feminino' AND nome = 'Lara Puglia Teixeira';
+DELETE FROM atletas WHERE nome = 'Carlos Yulo';
+DELETE FROM atletas WHERE data_nascimento = '1988-03-14';
+DELETE FROM atletas WHERE altura = 2.06;
+DELETE FROM atletas WHERE modalidade = 'Ginástica Artística' AND nacionalidade = 'Rússia';
