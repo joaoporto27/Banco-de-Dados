@@ -53,7 +53,25 @@ SELECT * FROM atletas WHERE genero = 'Feminino';
 SELECT nome, modalidade FROM atletas WHERE nacionalidade = 'Brasil';
 SELECT nome, nacionalidade FROM atletas WHERE modalidade = 'Patinação Artística';
 SELECT nome, altura FROM atletas WHERE modalidade = 'Natação';
-SELECT modalidade, nacionalidade FROM atletas WHERE id = 125;
 SELECT altura FROM atletas WHERE nome = 'Gabriela Braga Guimarães';
 
-
+UPDATE atletas SET nome = 'Giba' WHERE id = 82;
+UPDATE atletas SET modalidade = 'Patinação Artística no Gelo' WHERE id = 120;
+UPDATE atletas SET atuando = 'true' WHERE id = 116;
+UPDATE atletas SET altura = 1.76 WHERE id = 91;
+UPDATE atletas SET data_nascimento = '1989-5-16' WHERE id = 119;
+UPDATE atletas SET altura = 1.65 WHERE id = 106;
+UPDATE atletas SET nome = 'Maria Lenk' WHERE id = 106;
+UPDATE atletas SET nome = 'Michael Phelps' WHERE id = 103;
+UPDATE atletas SET nacionalidade = 'Estados Unidos' WHERE id = 107;
+UPDATE atletas SET atuando = 'false' WHERE id = 132;
+UPDATE atletas SET nacionalidade = 'EUA/China' WHERE id = 115;
+UPDATE atletas SET altura = 1.98 WHERE id = 94;
+UPDATE atletas SET atuando = 'true' WHERE id = 102;
+UPDATE atletas SET modalidade = 'Voleibol' WHERE id = 85;
+UPDATE atletas SET altura = 2.00 WHERE id = 101;
+UPDATE atletas SET altura = 1.91 WHERE id = 93;
+UPDATE atletas SET nome = 'Coreia' WHERE id = 116;
+UPDATE atletas SET atuando = 'true' WHERE id = 91;
+UPDATE atletas SET nome = 'Brazil' WHERE id = 100;
+UPDATE atletas SET altura = 1.94 WHERE id = 81;
