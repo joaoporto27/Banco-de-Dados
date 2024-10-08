@@ -41,3 +41,31 @@ INSERT INTO atletas_db (nome, data_nascimento, modalidade, nacionalidade, atuand
 ('Mark Messier', '1961-01-18', 'Hóquei no Gelo', 'Canadá', aposentado, 1.88, 'Masculino'),
 ('Gordie Howe', '1928-03-31', 'Hóquei no Gelo', 'Canadá', aposentado, 1.85, 'Masculino'),
 ('Martin Brodeur', '1972-05-06', 'Hóquei no Gelo', 'Canadá', aposentado, 1.88, 'Masculino');
+
+
+SELECT: 12;
+
+SELECT * FROM atletas_db;
+
+SELECT nome, modalidade FROM atletas_db WHERE atuando = TRUE;
+
+SELECT nome, modalidade FROM atletas_db WHERE nacionalidade = 'Brasil';
+
+SELECT nome FROM atletas_db WHERE modalidade = 'Futebol Americano';
+
+SELECT nome, modalidade FROM atletas_db WHERE genero = 'Feminino';
+
+SELECT nome, modalidade, altura FROM atletas_db WHERE altura > 1.90;
+
+SELECT nome, modalidade FROM atletas_db WHERE atuando = FALSE;
+
+SELECT nome, altura FROM atletas_db WHERE modalidade = 'Vôlei de Praia';
+
+SELECT nome, modalidade, altura FROM atletas_db ORDER BY altura DESC;
+
+SELECT nome FROM atletas_db WHERE modalidade = 'Surfe' AND nacionalidade = 'Havaí';
+
+SELECT modalidade, AVG(altura) AS altura FROM atletas_db GROUP BY modalidade,
+
+SELECT nome, data_nascimento FROM atletas_db WHERE data_nascimento > '1980-01-01';
+
