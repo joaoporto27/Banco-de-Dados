@@ -1,6 +1,6 @@
 INSERT: 40;
 
-INSERT INTO atletas_db (nome, data_nascimento, modalidade, nacionalidade, atuando, altura, genero) VALUES 
+INSERT INTO atletas (nome, data_nascimento, modalidade, nacionalidade, atuando, altura, genero) VALUES 
 ('Tom Brady', '1977-08-03', 'Futebol Americano', 'EUA', atuando, 1.93, 'Masculino'),
 ('Peyton Manning', '1976-03-24', 'Futebol Americano', 'EUA', aposentado, 1.96, 'Masculino'),
 ('Joe Montana', '1956-06-11', 'Futebol Americano', 'EUA', aposentado, 1.88, 'Masculino'),
@@ -45,27 +45,25 @@ INSERT INTO atletas_db (nome, data_nascimento, modalidade, nacionalidade, atuand
 
 SELECT: 12;
 
-SELECT * FROM atletas_db;
+SELECT nome, modalidade FROM atletas WHERE atuando = TRUE;
 
-SELECT nome, modalidade FROM atletas_db WHERE atuando = TRUE;
+SELECT nome, modalidade FROM atletas WHERE nacionalidade = 'Brasil';
 
-SELECT nome, modalidade FROM atletas_db WHERE nacionalidade = 'Brasil';
+SELECT nome FROM atletas WHERE modalidade = 'Futebol Americano';
 
-SELECT nome FROM atletas_db WHERE modalidade = 'Futebol Americano';
+SELECT nome, modalidade FROM atletas WHERE genero = 'Feminino';
 
-SELECT nome, modalidade FROM atletas_db WHERE genero = 'Feminino';
+SELECT nome, modalidade, altura FROM atletas WHERE altura > 1.90;
 
-SELECT nome, modalidade, altura FROM atletas_db WHERE altura > 1.90;
+SELECT nome, modalidade FROM atletas WHERE atuando = FALSE;
 
-SELECT nome, modalidade FROM atletas_db WHERE atuando = FALSE;
+SELECT nome, altura FROM atletas WHERE modalidade = 'Vôlei de Praia';
 
-SELECT nome, altura FROM atletas_db WHERE modalidade = 'Vôlei de Praia';
+SELECT nome, modalidade, altura FROM atletas ORDER BY altura DESC;
 
-SELECT nome, modalidade, altura FROM atletas_db ORDER BY altura DESC;
+SELECT nome FROM atletas WHERE modalidade = 'Surfe' AND nacionalidade = 'Havaí';
 
-SELECT nome FROM atletas_db WHERE modalidade = 'Surfe' AND nacionalidade = 'Havaí';
+SELECT modalidade, AVG (altura) AS altura FROM atletas GROUP BY modalidade,
 
-SELECT modalidade, AVG(altura) AS altura FROM atletas_db GROUP BY modalidade,
-
-SELECT nome, data_nascimento FROM atletas_db WHERE data_nascimento > '1980-01-01';
+SELECT nome, data_nascimento FROM atletas WHERE data_nascimento > '1980-01-01';
 
