@@ -57,13 +57,55 @@ SELECT nome, modalidade, altura FROM atletas WHERE altura > 1.90;
 
 SELECT nome, modalidade FROM atletas WHERE atuando = FALSE;
 
-SELECT nome, altura FROM atletas WHERE modalidade = 'Vôlei de Praia';
+SELECT nome, altura FROM atletas WHERE modalidade = 'Volei de Praia';
 
 SELECT nome, modalidade, altura FROM atletas ORDER BY altura DESC;
 
-SELECT nome FROM atletas WHERE modalidade = 'Surfe' AND nacionalidade = 'Havaí';
+SELECT nome FROM atletas WHERE modalidade = 'Surfe' AND nacionalidade = 'Havai';
 
-SELECT modalidade, AVG (altura) AS altura FROM atletas GROUP BY modalidade,
+SELECT modalidade, AVG (altura) AS altura FROM atletas GROUP BY modalidade;
 
 SELECT nome, data_nascimento FROM atletas WHERE data_nascimento > '1980-01-01';
+
+UPDATE: 20;
+
+UPDATE atletas SET altura = 1.94 WHERE nome = 'Tom Brady';
+
+UPDATE atletas SET nacionalidade = 'EUA' WHERE nome = 'John John Florence';
+
+UPDATE atletas SET atuando = FALSE WHERE nome = 'Aaron Rodgers';
+
+UPDATE atletas SET modalidade = 'Surfe Feminino' WHERE nome = 'Stephanie Gilmore';
+
+UPDATE atletas SET altura = 2.04 WHERE nome = 'Alison Cerutti';
+
+UPDATE atletas SET nacionalidade = 'Portugal' WHERE nome = 'Gabriel Medina';
+
+UPDATE atletas SET genero = 'M' WHERE nome = 'Larissa França';
+
+UPDATE atletas SET atuando = TRUE WHERE nome = 'Misty May-Treanor';
+
+UPDATE atletas SET altura = 1.86 WHERE nome = 'Deion Sanders';
+
+UPDATE atletas SET data_nascimento = '1954-08-15' WHERE nome = 'Walter Payton';
+
+UPDATE atletas SET nome = 'Marc Messier' WHERE nome = 'Mark Messier';
+
+UPDATE atletas SET nacionalidade = 'EUA' WHERE nome = 'Wayne Gretzky';
+
+UPDATE atletas SET modalidade = 'Basquete' WHERE nome = 'Ray Lewis';
+
+UPDATE atletas SET atuando = FALSE WHERE nome = 'Kelly Slater';
+
+UPDATE atletas SET altura = 2.05 WHERE nome = 'Phil Dalhausser';
+
+UPDATE atletas SET data_nascimento = '1978-07-15' WHERE nome = 'Kerri Walsh Jennings';
+
+UPDATE atletas SET genero = 'F' WHERE nome = 'Bruno Schmidt';
+
+UPDATE atletas SET nacionalidade = 'EUA' WHERE nome = 'Bobby Orr';
+
+UPDATE atletas SET atuando = FALSE WHERE nome = 'Filipe Toledo';
+
+UPDATE atletas SET modalidade = 'Beisebol' WHERE nome = 'Patrick Mahomes';
 
