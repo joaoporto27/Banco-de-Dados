@@ -1,7 +1,7 @@
 INSERT: 40;
 
 INSERT INTO atletas (nome, data_nascimento, modalidade, nacionalidade, atuando, altura, genero) VALUES 
-('Tom Brady', '1977-08-03', 'Futebol Americano', 'EUA', TRUE, 1.93, 'Masculino'),
+(''Patrick Mahomes'', '1977-08-03', 'Futebol Americano', 'EUA', TRUE, 1.93, 'Masculino'),
 ('Peyton Manning', '1976-03-24', 'Futebol Americano', 'EUA', FALSE, 1.96, 'Masculino'),
 ('Joe Montana', '1956-06-11', 'Futebol Americano', 'EUA', FALSE, 1.88, 'Masculino'),
 ('Jerry Rice', '1962-10-13', 'Futebol Americano', 'EUA', FALSE, 1.88, 'Masculino'),
@@ -45,21 +45,21 @@ INSERT INTO atletas (nome, data_nascimento, modalidade, nacionalidade, atuando, 
 
 SELECT: 12;
 
-SELECT nome, modalidade FROM atletas WHERE atuando = TRUE;
+SELECT * FROM atletas WHERE atuando = TRUE;
 
-SELECT nome, modalidade FROM atletas WHERE nacionalidade = 'Brasil';
+SELECT * FROM atletas WHERE nacionalidade = 'Brasil';
 
-SELECT nome FROM atletas WHERE modalidade = 'Futebol Americano';
+SELECT * FROM atletas WHERE modalidade = 'Futebol Americano';
 
-SELECT nome, modalidade FROM atletas WHERE genero = 'Feminino';
+SELECT * FROM atletas WHERE genero = 'Feminino';
 
-SELECT nome, modalidade, altura FROM atletas WHERE altura > 1.90;
+SELECT  FROM atletas WHERE altura > 1.90;
 
-SELECT nome, modalidade FROM atletas WHERE atuando = FALSE;
+SELECT * FROM atletas WHERE atuando = FALSE;
 
 SELECT nome, altura FROM atletas WHERE modalidade = 'Volei de Praia';
 
-SELECT nome, modalidade, altura FROM atletas ORDER BY altura DESC;
+SELECT * FROM atletas ORDER BY altura DESC;
 
 SELECT nome FROM atletas WHERE modalidade = 'Surfe' AND nacionalidade = 'Havai';
 
@@ -108,4 +108,31 @@ UPDATE atletas SET nacionalidade = 'EUA' WHERE nome = 'Bobby Orr';
 UPDATE atletas SET atuando = FALSE WHERE nome = 'Filipe Toledo';
 
 UPDATE atletas SET modalidade = 'Beisebol' WHERE nome = 'Patrick Mahomes';
+
+
+DELETE: 12;
+
+DELETE FROM Atletas WHERE nome = 'Tom Brady';
+
+DELETE FROM Atletas WHERE nome = 'Gabriel Medina';
+
+DELETE FROM Atletas WHERE nome = 'Misty May-Treanor';
+
+DELETE FROM Atletas WHERE nome = 'Aaron Rodgers';
+
+DELETE FROM Atletas WHERE nome = 'Deion Sanders';
+
+DELETE FROM Atletas WHERE nome = 'Walter Payton';
+
+DELETE FROM Atletas WHERE nome = 'Filipe Toledo';
+
+DELETE FROM Atletas WHERE nome = 'Sidney Crosby';
+
+DELETE FROM Atletas WHERE nome = 'Emanuel Rego';
+
+DELETE FROM Atletas WHERE nome = 'Bobby Orr';
+
+DELETE FROM Atletas WHERE nome = 'Wayne Gretzky';
+
+DELETE FROM Atletas WHERE nome = 'Deion Sanders';
 
