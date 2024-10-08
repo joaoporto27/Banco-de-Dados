@@ -1,4 +1,4 @@
-INSERT INTO musicas (nome, data_nascimento, modalidade, nacionalidade, atuando, altura, genero)
+INSERT INTO atletas_db (nome, data_nascimento, modalidade, nacionalidade, atuando, altura, genero)
 VALUES 
 ('Nikola Grbic', '1973-09-06', 'Vôlei', 'Sérvia', 'Aposentado', 1.93, 'Masculino'),
 ('Gilberto Amauri Godoy Filho', '1976-12-23', 'Vôlei', 'Brasil', 'Aposentado', 1.92, 'Masculino'),
@@ -10,8 +10,6 @@ VALUES
 ('Paola Ogechi Egonu', '1998-12-18', 'Vôlei', 'Itália', 'Atuando', 1.93, 'Feminino'),
 ('Gabriela Braga Guimarães', '1994-05-19', 'Vôlei', 'Brasil', 'Atuando', 1.80, 'Feminino'),
 ('Thaísa Daher de Menezes', '1987-05-15', 'Vôlei', 'Brasil', 'Atuando', 1.96, 'Feminino'), 
-
-
 ('Anders Eggert', '1982-05-14', 'Handebol', 'Dinamarca', 'Aposentado', 1.78, 'Masculino'), 
 ('Bertrand Fabien Gille', '1978-03-24', 'Handebol', 'França', 'Atuando', 1.88, 'Masculino'), 
 ('Bjarte Håkon Myrhol', '1982-05-29', 'Handebol', 'Noruega', 'Aposentado', 1.92, 'Masculino'), 
@@ -22,7 +20,6 @@ VALUES
 ('Crina Elena Pintea', '1990-04-03', 'Handebol', 'Romênia', 'Atuando', 1.86, 'Feminino'), 
 ('Cristina Georgiana Neagu', '1988-08-26', 'Handebol', 'Romênia', 'Atuando', 1.80, 'Feminino'), 
 ('Eduarda Idalina Amorim Taleska', '1986-09-23', 'Handebol', 'Brasil', 'Aposentada', 1.86, 'Feminino'), 
-
 ('Sun Yang', '1991-12-01', 'Natação', 'China', 'Atuando', 1.98, 'Masculino'), 
 ('César Augusto Cielo Filho', '1987-01-10', 'Natação', 'Brasil', 'Aposentado', 1.95, 'Masculino'), 
 ('Michael Fred Phelps II', '1985-06-30', 'Natação', 'Estados Unidos', 'Aposentado', 1.93, 'Masculino'), 
@@ -33,7 +30,6 @@ VALUES
 ('Gertrude Caroline Ederle', '1905-10-23', 'Natação', 'Estados Unidos', 'Aposentado', 1.68, 'Feminino'), 
 ('Dara Grace Torres', '1967-04-15', 'Natação', 'Estados Unidos', 'Aposentado', 1.83, 'Feminino'), 
 ('Kathleen Genevieve Ledecky', '1997-03-17', 'Natação', 'Estados Unidos', 'Atuando', 1.83, 'Feminino'), 
-
 ('Yuzuru Hanyu', '1994-12-07', 'Patinação Artística', 'Japão', 'Atuando', 1.72, 'Masculino'), 
 ('Evgeni Viktorovitch Pliushchenko', '1982-11-03', 'Patinação Artística', 'Rússia', 'Aposentado', 1.78, 'Masculino'), 
 ('Eric Radford', '1985-01-27', 'Patinação Artística', 'Canadá', 'Aposentado', 1.88, 'Masculino'), 
@@ -44,5 +40,4 @@ VALUES
 ('Gabriella Papadakis', '1995-05-10', 'Patinação Artística', 'França', 'Atuando', 1.66, 'Feminino'), 
 ('Tessa Jane McCormick Virtue', '19989-05-17', 'Patinação Artística', 'Canadá', 'Aposentado', 1.65, 'Feminino'), 
 ('Alexandra Vyacheslavovna Trusova', '2004-06-23', 'Patinação Artística', 'Rússia', 'Atuando', 1.65, 'Feminino'), 
-
 
