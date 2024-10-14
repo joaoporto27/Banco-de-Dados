@@ -56,3 +56,38 @@ SELECT * FROM atletas WHERE nome LIKE 'P%';
 SELECT * FROM atletas WHERE atuando = 'True'
 SELECT * FROM atletas WHERE altura BETWEEN 1.64 AND 1.74;
 
+
+UPDATE atletas SET nacionalidade = 'EUA' WHERE id = 12;
+UPDATE atletas SET nome = 'Novo Nome' WHERE id = 30;
+UPDATE atletas SET genero = 'Modificado' WHERE nome LIKE 'S%';
+UPDATE atletas SET data_nascimento = '1989-06-17' WHERE id = 10;
+UPDATE atletas SET altura = 1.90 WHERE nome = 'Diana Taurasi';
+UPDATE atletas SET nome = 'Nome Modificado' WHERE data_nascimento = '1975-09-16';
+UPDATE atletas SET genero = 'Modificado Genero' WHERE data_nascimento > '2000-01-01';
+UPDATE atletas SET genero = 'Masculino' WHERE nome = 'Nina Derwael';
+UPDATE atletas SET altura = 1.50 WHERE data_nascimento BETWEEN '1987-09-13' AND '1989-08-01';
+UPDATE atletas SET modalidade = 'Ginástica Artística' WHERE id = 6;
+UPDATE atletas SET data_nascimento = '1989-10-16' WHERE nome = 'Pau Ribes Culla';
+UPDATE atletas SET data_nascimento = '2017-10-07' WHERE nome LIKE 'L%';
+UPDATE atletas SET modalidade = 'Basquete' WHERE id = 67;
+UPDATE atletas SET nacionalidade = 'Espanha' WHERE data_nascimento BETWEEN '1999-01-01' AND '1999-12-31';
+UPDATE atletas SET nome = 'Novo Nome' WHERE nacionalidade = 'Bélgica';
+UPDATE atletas SET nacionalidade = 'Irlanda' WHERE id = 80;
+UPDATE atletas SET nacionalidade = 'Argentina' WHERE nome = 'Aleksandr Evgenyevich Maltsev';
+UPDATE atletas SET altura = 1.86 WHERE nome = 'Giorgio Minisini';
+UPDATE atletas SET nacionalidade = 'França' WHERE nome LIKE 'M%';
+UPDATE atletas SET altura = 1.54 WHERE id = 95;
+
+
+DELETE FROM atletas WHERE nacionalidade = 'EUA' AND data_nascimento = '1979-01-17';
+DELETE FROM atletas WHERE data_nascimento < 1974-01-01;
+DELETE FROM atletas WHERE id = 41;
+DELETE FROM atletas WHERE genero = 'Masculino' AND nome = 'Scott Brash';
+DELETE FROM atletas WHERE modalidade = 'Nado artístico' AND altura = 1.76;
+DELETE FROM atletas WHERE modalidade = 'Basquete' AND nacionalidade = 'Grécia';
+DELETE FROM atletas WHERE nacionalidade = 'Argentina';
+DELETE FROM atletas WHERE genero = 'Feminino' AND nome = 'Lara Puglia Teixeira';
+DELETE FROM atletas WHERE nome = 'Carlos Yulo';
+DELETE FROM atletas WHERE data_nascimento = '1988-03-14';
+DELETE FROM atletas WHERE altura = 2.06;
+DELETE FROM atletas WHERE modalidade = 'Ginástica Artística' AND nacionalidade = 'Rússia';
