@@ -1,0 +1,2 @@
+Entidade:  Atletas
+ - Atletas: Id, Nome, Data de nascimento, Modalidade, Nacionalidade, Atuando, Altura, Gênero.
