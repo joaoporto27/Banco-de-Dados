@@ -75,3 +75,29 @@ UPDATE atletas SET nome = 'Coreia' WHERE id = 116;
 UPDATE atletas SET atuando = 'true' WHERE id = 91;
 UPDATE atletas SET nome = 'Brazil' WHERE id = 100;
 UPDATE atletas SET altura = 1.94 WHERE id = 81;
+
+DELETE FROM atletas WHERE nome = 'Gertrude Caroline Ederle';
+DELETE FROM atletas WHERE modalidade = 'Handebol' AND atuando = False;
+DELETE FROM atletas WHERE altura > 2.00;
+DELETE FROM atletas WHERE nacionalidade = 'Croácia';
+DELETE FROM atletas WHERE nacionalidade = 'China' AND atuando = False;
+DELETE FROM atletas WHERE nome = 'Anders Eggert';
+DELETE FROM atletas WHERE nacionalidade = 'Romênia';
+DELETE FROM atletas WHERE nome = 'Jenny Lang Ping';
+DELETE FROM atletas WHERE nacionalidade = 'Brasil' AND atuando = True;
+DELETE FROM atletas WHERE altura < 1.67;
+DELETE FROM atletas WHERE modalidade = 'Natação' AND altura > 1.80;
+DELETE FROM atletas WHERE nome = 'Evgeni Viktorovitch Pliushchenko ';
+
+SELECT SUM(altura) FROM atletas WHERE modalidade = 'Natação';
+SELECT modalidade, AVG(altura) FROM atletas WHERE genero = 'Masculino';
+SELECT nome, LENGTH(nome) AS nome_caracteres FROM atletas;
+SELECT nome, nacionalidade, CONCAT(nome, ' representa ', nacionalidade) AS representar_nacao FROM atletas;
+SELECT nome, ROUND(altura) AS alturas_arrendondadas FROM atletas;
+SELECT UPPER(nome) FROM atletas WHERE nacionalidade = 'Brasil';
+SELECT MAX(altura) FROM atletas WHERE modalidade = 'Vôlei';
+SELECT modalidade, COUNT(*) AS atuando_modalidade FROM atletas WHERE atuando = False;
+SELECT nome, AGE(CURRENT_DATE, data_nascimento) AS idade FROM atletas;
+SELECT LOWER(nome) FROM atletas WHERE modalidade = 'Handebol';
+SELECT nome, EXTRACT(YEAR FROM data_nascimento) AS ano_nascimento FROM atletas,
+SELECT MIN(altura) FROM atletas WHERE modalidade = 'Patinação Artística';
